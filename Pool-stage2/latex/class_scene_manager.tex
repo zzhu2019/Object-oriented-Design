@@ -1,0 +1,147 @@
+\hypertarget{class_scene_manager}{}\section{Scene\+Manager Class Reference}
+\label{class_scene_manager}\index{Scene\+Manager@{Scene\+Manager}}
+Inheritance diagram for Scene\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_manager_aeaf8d1701d0624f47f0274f2642154f2}{Scene\+Manager}} (unique\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ table, vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&balls, bool f=false)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a1692dc970086f1cc481000da605c4628}{tick}} (float dtime)
+\begin{DoxyCompactList}\small\item\em take a timestep of size dtime \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a1acae2e8e78a37c3cb17c5d90a5882ca}{draw}} (Q\+Painter \&painter) const
+\begin{DoxyCompactList}\small\item\em draw the current scene \end{DoxyCompactList}\item 
+Q\+Size \mbox{\hyperlink{class_scene_manager_ad1c7f8a0c3e2e7d9211a442cd24253d4}{veiw\+Port}} () const
+\begin{DoxyCompactList}\small\item\em retrives the size of the scene \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a543db38edb424561aa3f0d845ed5c32a}{set\+Cue\+BallV}} (Q\+Vector2D vel)
+\begin{DoxyCompactList}\small\item\em set the cue ball\textquotesingle{}s velocity \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_af7f98cdad994d8f8b982239ff54363da}{set\+Stage2\+Bool}} (bool f)
+\begin{DoxyCompactList}\small\item\em set the bool member stage2 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scene_manager_a425e6d6cae2f7f902027b8a8cba28d0a}{get\+Flag}} () const
+\begin{DoxyCompactList}\small\item\em get the bool flag stage2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_manager_acf825392b2abb023b088d9cae42849f0}\label{class_scene_manager_acf825392b2abb023b088d9cae42849f0}} 
+void \mbox{\hyperlink{class_scene_manager_acf825392b2abb023b088d9cae42849f0}{reset\+BallV}} ()
+\begin{DoxyCompactList}\small\item\em reset the ball\textquotesingle{}s velocity to zero, to prevent the ball doesnt stop with a really small vecolity \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_manager_aeaf8d1701d0624f47f0274f2642154f2}\label{class_scene_manager_aeaf8d1701d0624f47f0274f2642154f2}} 
+\index{Scene\+Manager@{Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\index{Scene\+Manager@{Scene\+Manager}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{Scene\+Manager()}{SceneManager()}}
+{\footnotesize\ttfamily Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}\item[{unique\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$}]{table,  }\item[{vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&}]{balls,  }\item[{bool}]{f = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & \\
+\hline
+{\em balls} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_manager_a1acae2e8e78a37c3cb17c5d90a5882ca}\label{class_scene_manager_a1acae2e8e78a37c3cb17c5d90a5882ca}} 
+\index{Scene\+Manager@{Scene\+Manager}!draw@{draw}}
+\index{draw@{draw}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::draw (\begin{DoxyParamCaption}\item[{Q\+Painter \&}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw the current scene 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & for rendering objects \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_graphic_aed0af75ae3756baeb3fe663ae5f36f29}{Graphic}}.
+
+\mbox{\Hypertarget{class_scene_manager_a425e6d6cae2f7f902027b8a8cba28d0a}\label{class_scene_manager_a425e6d6cae2f7f902027b8a8cba28d0a}} 
+\index{Scene\+Manager@{Scene\+Manager}!get\+Flag@{get\+Flag}}
+\index{get\+Flag@{get\+Flag}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{get\+Flag()}{getFlag()}}
+{\footnotesize\ttfamily bool Scene\+Manager\+::get\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the bool flag stage2 
+
+\begin{DoxyReturn}{Returns}
+a bool type of stage2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_manager_a543db38edb424561aa3f0d845ed5c32a}\label{class_scene_manager_a543db38edb424561aa3f0d845ed5c32a}} 
+\index{Scene\+Manager@{Scene\+Manager}!set\+Cue\+BallV@{set\+Cue\+BallV}}
+\index{set\+Cue\+BallV@{set\+Cue\+BallV}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{set\+Cue\+Ball\+V()}{setCueBallV()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::set\+Cue\+BallV (\begin{DoxyParamCaption}\item[{Q\+Vector2D}]{vel }\end{DoxyParamCaption})}
+
+
+
+set the cue ball\textquotesingle{}s velocity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_manager_af7f98cdad994d8f8b982239ff54363da}\label{class_scene_manager_af7f98cdad994d8f8b982239ff54363da}} 
+\index{Scene\+Manager@{Scene\+Manager}!set\+Stage2\+Bool@{set\+Stage2\+Bool}}
+\index{set\+Stage2\+Bool@{set\+Stage2\+Bool}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{set\+Stage2\+Bool()}{setStage2Bool()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::set\+Stage2\+Bool (\begin{DoxyParamCaption}\item[{bool}]{f }\end{DoxyParamCaption})}
+
+
+
+set the bool member stage2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & bool type named f \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_manager_a1692dc970086f1cc481000da605c4628}\label{class_scene_manager_a1692dc970086f1cc481000da605c4628}} 
+\index{Scene\+Manager@{Scene\+Manager}!tick@{tick}}
+\index{tick@{tick}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::tick (\begin{DoxyParamCaption}\item[{float}]{dtime }\end{DoxyParamCaption})}
+
+
+
+take a timestep of size dtime 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtime} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_manager_ad1c7f8a0c3e2e7d9211a442cd24253d4}\label{class_scene_manager_ad1c7f8a0c3e2e7d9211a442cd24253d4}} 
+\index{Scene\+Manager@{Scene\+Manager}!veiw\+Port@{veiw\+Port}}
+\index{veiw\+Port@{veiw\+Port}!Scene\+Manager@{Scene\+Manager}}
+\subsubsection{\texorpdfstring{veiw\+Port()}{veiwPort()}}
+{\footnotesize\ttfamily Q\+Size Scene\+Manager\+::veiw\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retrives the size of the scene 
+
+\begin{DoxyReturn}{Returns}
+the size of the scene 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+scenemanager.\+h\item 
+scenemanager.\+cpp\end{DoxyCompactItemize}

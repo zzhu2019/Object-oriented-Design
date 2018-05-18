@@ -1,0 +1,76 @@
+\hypertarget{classpool_ball}{}\section{pool\+Ball Class Reference}
+\label{classpool_ball}\index{pool\+Ball@{pool\+Ball}}
+Inheritance diagram for pool\+Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpool_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpool_ball_ab6d6082e1368588d31bb3ea111121525}\label{classpool_ball_ab6d6082e1368588d31bb3ea111121525}} 
+{\bfseries pool\+Ball} (\mbox{\hyperlink{class_coordinate}{Coordinate}} coordinate, double radius, string color, double mass, \mbox{\hyperlink{class_velocity}{Velocity}} velocity)
+\item 
+void \mbox{\hyperlink{classpool_ball_ab98b836bfc2de5d1573a6f015614da75}{change\+VX}} (double change)
+\item 
+void \mbox{\hyperlink{classpool_ball_af0816c210e83ac30c1cedde19fd92c4a}{change\+VY}} (double change)
+\item 
+\mbox{\Hypertarget{classpool_ball_a8ada7169ca79112aca09cd9434c52dba}\label{classpool_ball_a8ada7169ca79112aca09cd9434c52dba}} 
+\mbox{\hyperlink{class_coordinate}{Coordinate}} {\bfseries getcoordinate} ()
+\item 
+\mbox{\Hypertarget{classpool_ball_a0f57c701684d7c8bb6cdb584c328881c}\label{classpool_ball_a0f57c701684d7c8bb6cdb584c328881c}} 
+double {\bfseries getradius} ()
+\item 
+\mbox{\Hypertarget{classpool_ball_a07bcecd4fe38d1363f7cf08359183f24}\label{classpool_ball_a07bcecd4fe38d1363f7cf08359183f24}} 
+string {\bfseries getcolor} ()
+\item 
+\mbox{\Hypertarget{classpool_ball_ab1acec22de9a8d4de61ffd8efacd4076}\label{classpool_ball_ab1acec22de9a8d4de61ffd8efacd4076}} 
+double {\bfseries getmass} ()
+\item 
+\mbox{\Hypertarget{classpool_ball_a5ff8845804ee770cfb52e20bb17e7f4b}\label{classpool_ball_a5ff8845804ee770cfb52e20bb17e7f4b}} 
+\mbox{\hyperlink{class_velocity}{Velocity}} {\bfseries getvelocity} ()
+\item 
+void \mbox{\hyperlink{classpool_ball_a62f83890e97cd5b40f97103e835e38da}{is\+Collision\+Wall}} (Q\+Painter \&painter, unsigned int time, double x, double y, double fri)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpool_ball_ab98b836bfc2de5d1573a6f015614da75}\label{classpool_ball_ab98b836bfc2de5d1573a6f015614da75}} 
+\index{pool\+Ball@{pool\+Ball}!change\+VX@{change\+VX}}
+\index{change\+VX@{change\+VX}!pool\+Ball@{pool\+Ball}}
+\subsubsection{\texorpdfstring{change\+V\+X()}{changeVX()}}
+{\footnotesize\ttfamily void pool\+Ball\+::change\+VX (\begin{DoxyParamCaption}\item[{double}]{change }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em change} & change the value of x velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_ball_af0816c210e83ac30c1cedde19fd92c4a}\label{classpool_ball_af0816c210e83ac30c1cedde19fd92c4a}} 
+\index{pool\+Ball@{pool\+Ball}!change\+VY@{change\+VY}}
+\index{change\+VY@{change\+VY}!pool\+Ball@{pool\+Ball}}
+\subsubsection{\texorpdfstring{change\+V\+Y()}{changeVY()}}
+{\footnotesize\ttfamily void pool\+Ball\+::change\+VY (\begin{DoxyParamCaption}\item[{double}]{change }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em change} & change the value of y velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_ball_a62f83890e97cd5b40f97103e835e38da}\label{classpool_ball_a62f83890e97cd5b40f97103e835e38da}} 
+\index{pool\+Ball@{pool\+Ball}!is\+Collision\+Wall@{is\+Collision\+Wall}}
+\index{is\+Collision\+Wall@{is\+Collision\+Wall}!pool\+Ball@{pool\+Ball}}
+\subsubsection{\texorpdfstring{is\+Collision\+Wall()}{isCollisionWall()}}
+{\footnotesize\ttfamily void pool\+Ball\+::is\+Collision\+Wall (\begin{DoxyParamCaption}\item[{Q\+Painter \&}]{painter,  }\item[{unsigned int}]{time,  }\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{fri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fri} & check the ball-\/wall collision and calculate velocity change and cooridnate change \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+product.\+h\end{DoxyCompactItemize}

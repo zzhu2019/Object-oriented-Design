@@ -1,0 +1,134 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+The top level class for controlling the window.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a48965b8c40edf53d61e2d41977c1566d}\label{class_main_window_a48965b8c40edf53d61e2d41977c1566d}} 
+void \mbox{\hyperlink{class_main_window_a48965b8c40edf53d61e2d41977c1566d}{tick}} ()
+\begin{DoxyCompactList}\small\item\em move the scene by a small timestep \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a4c2deac99b9b27dbb251d52380150515}\label{class_main_window_a4c2deac99b9b27dbb251d52380150515}} 
+void \mbox{\hyperlink{class_main_window_a4c2deac99b9b27dbb251d52380150515}{next\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em draws the next frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_af5ee499b2fb8e1ece871f21acc9dd332}{Main\+Window}} (unique\+\_\+ptr$<$ \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $>$ scene, Q\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a1dff511c9697cbcb60150894f480b9c8}{mouse\+Press\+Event}} (Q\+Mouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em the event for pressing mouse\+: record the cursor position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad162aaba235ea093b59f6a9bf0fc4d01}{mouse\+Release\+Event}} (Q\+Mouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em the event for releasing mouse\+: record the position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9c8748d463f01ddae6abcd8f8163fcef}{mouse\+Move\+Event}} (Q\+Mouse\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em the event for moving mouse\+: get current cursor position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_abf05d580e91f725777cdb6a5eb0bf08c}{paint\+Event}} (Q\+Paint\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em draws objects on the window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The top level class for controlling the window. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_af5ee499b2fb8e1ece871f21acc9dd332}\label{class_main_window_af5ee499b2fb8e1ece871f21acc9dd332}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{unique\+\_\+ptr$<$ \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} $>$}]{scene,  }\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene for the program to render \\
+\hline
+{\em parent} & the parent Qt Object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a9c8748d463f01ddae6abcd8f8163fcef}\label{class_main_window_a9c8748d463f01ddae6abcd8f8163fcef}} 
+\index{Main\+Window@{Main\+Window}!mouse\+Move\+Event@{mouse\+Move\+Event}}
+\index{mouse\+Move\+Event@{mouse\+Move\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{mouse\+Move\+Event()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+the event for moving mouse\+: get current cursor position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+Mouse\+Event} & object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a1dff511c9697cbcb60150894f480b9c8}\label{class_main_window_a1dff511c9697cbcb60150894f480b9c8}} 
+\index{Main\+Window@{Main\+Window}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{mouse\+Press\+Event()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+the event for pressing mouse\+: record the cursor position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+Mouse\+Event} & object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ad162aaba235ea093b59f6a9bf0fc4d01}\label{class_main_window_ad162aaba235ea093b59f6a9bf0fc4d01}} 
+\index{Main\+Window@{Main\+Window}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{mouse\+Release\+Event()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+the event for releasing mouse\+: record the position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+Mouse\+Event} & object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_abf05d580e91f725777cdb6a5eb0bf08c}\label{class_main_window_abf05d580e91f725777cdb6a5eb0bf08c}} 
+\index{Main\+Window@{Main\+Window}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{paint\+Event()}{paintEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+draws objects on the window 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & specifies regions to render \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

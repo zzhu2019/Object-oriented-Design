@@ -1,0 +1,213 @@
+\hypertarget{class_simple_ball}{}\section{Simple\+Ball Class Reference}
+\label{class_simple_ball}\index{Simple\+Ball@{Simple\+Ball}}
+Inheritance diagram for Simple\+Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_simple_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_ball_a73986d31758ab1201000aef11bef49aa}{Simple\+Ball}} (float radius=10, const Q\+Color \&color=Q\+Color(255, 255, 255), float mass=1.\+0, const Q\+Vector2D \&position=Q\+Vector2D(0, 0), const Q\+Vector2D \&velocity=Q\+Vector2D(0, 0), const double strength=std\+::numeric\+\_\+limits$<$ double $>$\+::max(), bool is\+Contained=false)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_simple_ball}{Simple\+Ball}} Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_ball_ad775dddec77276d6f92f8aea4b487df3}{draw}} (Q\+Painter \&painter) const override
+\begin{DoxyCompactList}\small\item\em Draws the ball onto the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_ball_a22ec99de5d096383f869a919f9f9abd7}{change\+Pfor\+Contained}} (const Q\+Vector2D \&delta) override
+\begin{DoxyCompactList}\small\item\em change the position for contained balls. Inherited from base class, if no contained ball, then do nothing. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_simple_ball_a0cb0b931a2e3fa9f2ffba6fd354985ea}{get\+Mass}} () const override
+\begin{DoxyCompactList}\small\item\em get the mass of the ball \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_simple_ball_a3a4c5bc776e3788112f02320432ba8cc}{get\+Strength}} () const override
+\begin{DoxyCompactList}\small\item\em get the strength of the ball \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_simple_ball_ac9c7e389cf03bfb2f3e71d66bf6608cd}{get\+Contained\+Ball\+Number}} () const override
+\begin{DoxyCompactList}\small\item\em get the number of conatined ball \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_ball_a5e100bd3bc3b700d3ce1c5028d95ac31}{change\+Vfor\+Contained}} (const Q\+Vector2D \&Parent\+Velocity, float energy\+Per\+Ball, const Q\+Vector2D \&point\+Of\+Collision) const override
+\begin{DoxyCompactList}\small\item\em change the velocity for contained ball, inherited from base class, return 0 here \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_ball_a1af03353f6c3414e6ce7c12a9b338e72}{move\+Out}} (std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&balls\+On\+Table) override
+\begin{DoxyCompactList}\small\item\em move the contained balls out into given vector, inherited from base calss, do nothing here \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_simple_ball_aad4437558814bc8c6f276d5e09507eb4}{get\+Colour}} () const override
+\begin{DoxyCompactList}\small\item\em get the colour of this ball \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simple_ball_a73986d31758ab1201000aef11bef49aa}\label{class_simple_ball_a73986d31758ab1201000aef11bef49aa}} 
+\index{Simple\+Ball@{Simple\+Ball}!Simple\+Ball@{Simple\+Ball}}
+\index{Simple\+Ball@{Simple\+Ball}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{Simple\+Ball()}{SimpleBall()}}
+{\footnotesize\ttfamily Simple\+Ball\+::\+Simple\+Ball (\begin{DoxyParamCaption}\item[{float}]{radius = {\ttfamily 10},  }\item[{const Q\+Color \&}]{color = {\ttfamily QColor(255,~255,~255)},  }\item[{float}]{mass = {\ttfamily 1.0},  }\item[{const Q\+Vector2D \&}]{position = {\ttfamily QVector2D(0,~0)},  }\item[{const Q\+Vector2D \&}]{velocity = {\ttfamily QVector2D(0,~0)},  }\item[{const double}]{strength = {\ttfamily std\+:\+:numeric\+\_\+limits$<$double$>$\+:\+:max()},  }\item[{bool}]{is\+Contained = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_simple_ball}{Simple\+Ball}} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+{\em color} & \\
+\hline
+{\em mass} & \+: use 0 for infinite mass \\
+\hline
+{\em position} & \\
+\hline
+{\em velocity} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_ball_a22ec99de5d096383f869a919f9f9abd7}\label{class_simple_ball_a22ec99de5d096383f869a919f9f9abd7}} 
+\index{Simple\+Ball@{Simple\+Ball}!change\+Pfor\+Contained@{change\+Pfor\+Contained}}
+\index{change\+Pfor\+Contained@{change\+Pfor\+Contained}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{change\+Pfor\+Contained()}{changePforContained()}}
+{\footnotesize\ttfamily void Simple\+Ball\+::change\+Pfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+change the position for contained balls. Inherited from base class, if no contained ball, then do nothing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & position \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a86aa99bb9b244c4ec9193f8ac09c6e8e}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_a5e100bd3bc3b700d3ce1c5028d95ac31}\label{class_simple_ball_a5e100bd3bc3b700d3ce1c5028d95ac31}} 
+\index{Simple\+Ball@{Simple\+Ball}!change\+Vfor\+Contained@{change\+Vfor\+Contained}}
+\index{change\+Vfor\+Contained@{change\+Vfor\+Contained}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{change\+Vfor\+Contained()}{changeVforContained()}}
+{\footnotesize\ttfamily void Simple\+Ball\+::change\+Vfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{Parent\+Velocity,  }\item[{float}]{energy\+Per\+Ball,  }\item[{const Q\+Vector2D \&}]{point\+Of\+Collision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+change the velocity for contained ball, inherited from base class, return 0 here 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\textquotesingle{}s} & velocity \\
+\hline
+{\em engergy} & gained by collison \\
+\hline
+{\em the} & point of collision \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a43cfbf4dca89a94048b4d45b2eaf62e9}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_ad775dddec77276d6f92f8aea4b487df3}\label{class_simple_ball_ad775dddec77276d6f92f8aea4b487df3}} 
+\index{Simple\+Ball@{Simple\+Ball}!draw@{draw}}
+\index{draw@{draw}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Simple\+Ball\+::draw (\begin{DoxyParamCaption}\item[{Q\+Painter \&}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draws the ball onto the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & for rendering the ball \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_graphic_aed0af75ae3756baeb3fe663ae5f36f29}{Graphic}}.
+
+\mbox{\Hypertarget{class_simple_ball_aad4437558814bc8c6f276d5e09507eb4}\label{class_simple_ball_aad4437558814bc8c6f276d5e09507eb4}} 
+\index{Simple\+Ball@{Simple\+Ball}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}}
+{\footnotesize\ttfamily std\+::string Simple\+Ball\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the colour of this ball 
+
+\begin{DoxyReturn}{Returns}
+a string type of name of the colour 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_a248c8a5fc9b8770840f275ea7057b012}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_ac9c7e389cf03bfb2f3e71d66bf6608cd}\label{class_simple_ball_ac9c7e389cf03bfb2f3e71d66bf6608cd}} 
+\index{Simple\+Ball@{Simple\+Ball}!get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}}
+\index{get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{get\+Contained\+Ball\+Number()}{getContainedBallNumber()}}
+{\footnotesize\ttfamily int Simple\+Ball\+::get\+Contained\+Ball\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the number of conatined ball 
+
+\begin{DoxyReturn}{Returns}
+return the integer of ball number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_a13794c8d0e0863301a5f321a617542f6}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_a0cb0b931a2e3fa9f2ffba6fd354985ea}\label{class_simple_ball_a0cb0b931a2e3fa9f2ffba6fd354985ea}} 
+\index{Simple\+Ball@{Simple\+Ball}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily float Simple\+Ball\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the mass of the ball 
+
+\begin{DoxyReturn}{Returns}
+a float type of mass 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_ab755ce741a2f0b652f499d183376be04}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_a3a4c5bc776e3788112f02320432ba8cc}\label{class_simple_ball_a3a4c5bc776e3788112f02320432ba8cc}} 
+\index{Simple\+Ball@{Simple\+Ball}!get\+Strength@{get\+Strength}}
+\index{get\+Strength@{get\+Strength}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{get\+Strength()}{getStrength()}}
+{\footnotesize\ttfamily double Simple\+Ball\+::get\+Strength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the strength of the ball 
+
+\begin{DoxyReturn}{Returns}
+a double type of strength 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_ab659c8dceb67abdd09423814d4fc879e}{Ball}}.
+
+\mbox{\Hypertarget{class_simple_ball_a1af03353f6c3414e6ce7c12a9b338e72}\label{class_simple_ball_a1af03353f6c3414e6ce7c12a9b338e72}} 
+\index{Simple\+Ball@{Simple\+Ball}!move\+Out@{move\+Out}}
+\index{move\+Out@{move\+Out}!Simple\+Ball@{Simple\+Ball}}
+\subsubsection{\texorpdfstring{move\+Out()}{moveOut()}}
+{\footnotesize\ttfamily void Simple\+Ball\+::move\+Out (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&}]{balls\+On\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+move the contained balls out into given vector, inherited from base calss, do nothing here 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & given vector for new balls \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a7d3b8c70ee8c61db73692a4d44bbf933}{Ball}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simpleball.\+h\item 
+simpleball.\+cpp\end{DoxyCompactItemize}

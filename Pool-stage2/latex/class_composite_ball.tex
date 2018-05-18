@@ -1,0 +1,215 @@
+\hypertarget{class_composite_ball}{}\section{Composite\+Ball Class Reference}
+\label{class_composite_ball}\index{Composite\+Ball@{Composite\+Ball}}
+Inheritance diagram for Composite\+Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_composite_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_composite_ball_a5d9c99050f3844f59918fca2a1540cb4}{Composite\+Ball}} (float radius, float mass, const Q\+Vector2D \&pos, const Q\+Vector2D \&vel, const Q\+Color \&color, double strength, vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&balls, bool is\+Contained)
+\begin{DoxyCompactList}\small\item\em constructor for composite ball \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_composite_ball_a976f7cc1cec45385c0a0f81cd69c2352}{draw}} (Q\+Painter \&painter) const override
+\begin{DoxyCompactList}\small\item\em override the draw method to draw composite ball \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_composite_ball_a1e559c1b9d9b4905599c370c79990576}{change\+Pfor\+Contained}} (const Q\+Vector2D \&delta) override
+\begin{DoxyCompactList}\small\item\em change the position for contained balls inside this ball \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_composite_ball_afa621612641fecb3af81390bfbe7d941}{get\+Mass}} () const override
+\begin{DoxyCompactList}\small\item\em get the mass for this ball \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_composite_ball_a1585c03baf89ce19c58806dfa6eac131}{get\+Strength}} () const override
+\begin{DoxyCompactList}\small\item\em get the strength of the ball \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_composite_ball_a8120a00750a9bb77fd6e41f98de119b3}{get\+Contained\+Ball\+Number}} () const override
+\begin{DoxyCompactList}\small\item\em get the contained ball\textquotesingle{}s number \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_composite_ball_a9aa11bc758f517c35de751ae8ce27966}{change\+Vfor\+Contained}} (const Q\+Vector2D \&Parent\+Velocity, float energy\+Per\+Ball, const Q\+Vector2D \&point\+Of\+Collision) const override
+\begin{DoxyCompactList}\small\item\em change the velocity for contained balls inside this ball \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_composite_ball_a2bf10829db0790d8a42529fafaf8c7b4}{move\+Out}} (std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&balls\+On\+Table) override
+\begin{DoxyCompactList}\small\item\em move the contained balls out into the given vector \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_composite_ball_aed883fc6572063ba2e3173e4a78ed6bf}{get\+Colour}} () const override
+\begin{DoxyCompactList}\small\item\em get the colour of this ball \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_composite_ball_a5d9c99050f3844f59918fca2a1540cb4}\label{class_composite_ball_a5d9c99050f3844f59918fca2a1540cb4}} 
+\index{Composite\+Ball@{Composite\+Ball}!Composite\+Ball@{Composite\+Ball}}
+\index{Composite\+Ball@{Composite\+Ball}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{Composite\+Ball()}{CompositeBall()}}
+{\footnotesize\ttfamily Composite\+Ball\+::\+Composite\+Ball (\begin{DoxyParamCaption}\item[{float}]{radius,  }\item[{float}]{mass,  }\item[{const Q\+Vector2D \&}]{pos,  }\item[{const Q\+Vector2D \&}]{vel,  }\item[{const Q\+Color \&}]{color,  }\item[{double}]{strength,  }\item[{vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&}]{balls,  }\item[{bool}]{is\+Contained }\end{DoxyParamCaption})}
+
+
+
+constructor for composite ball 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & for the ball \\
+\hline
+{\em mass} & for the ball \\
+\hline
+{\em Q\+Vector2D} & position for the ball \\
+\hline
+{\em Q\+Vector2D} & velocity for the ball \\
+\hline
+{\em colour} & for the ball \\
+\hline
+{\em strength} & for the ball \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_composite_ball_a1e559c1b9d9b4905599c370c79990576}\label{class_composite_ball_a1e559c1b9d9b4905599c370c79990576}} 
+\index{Composite\+Ball@{Composite\+Ball}!change\+Pfor\+Contained@{change\+Pfor\+Contained}}
+\index{change\+Pfor\+Contained@{change\+Pfor\+Contained}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{change\+Pfor\+Contained()}{changePforContained()}}
+{\footnotesize\ttfamily void Composite\+Ball\+::change\+Pfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+change the position for contained balls inside this ball 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & position for changing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a86aa99bb9b244c4ec9193f8ac09c6e8e}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_a9aa11bc758f517c35de751ae8ce27966}\label{class_composite_ball_a9aa11bc758f517c35de751ae8ce27966}} 
+\index{Composite\+Ball@{Composite\+Ball}!change\+Vfor\+Contained@{change\+Vfor\+Contained}}
+\index{change\+Vfor\+Contained@{change\+Vfor\+Contained}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{change\+Vfor\+Contained()}{changeVforContained()}}
+{\footnotesize\ttfamily void Composite\+Ball\+::change\+Vfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{Parent\+Velocity,  }\item[{float}]{energy\+Per\+Ball,  }\item[{const Q\+Vector2D \&}]{point\+Of\+Collision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+change the velocity for contained balls inside this ball 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\textquotesingle{}s} & velocity \\
+\hline
+{\em after} & collision gained energy \\
+\hline
+{\em the} & point of collision \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a43cfbf4dca89a94048b4d45b2eaf62e9}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_a976f7cc1cec45385c0a0f81cd69c2352}\label{class_composite_ball_a976f7cc1cec45385c0a0f81cd69c2352}} 
+\index{Composite\+Ball@{Composite\+Ball}!draw@{draw}}
+\index{draw@{draw}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Composite\+Ball\+::draw (\begin{DoxyParamCaption}\item[{Q\+Painter \&}]{painter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+override the draw method to draw composite ball 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & for drawing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_graphic_aed0af75ae3756baeb3fe663ae5f36f29}{Graphic}}.
+
+\mbox{\Hypertarget{class_composite_ball_aed883fc6572063ba2e3173e4a78ed6bf}\label{class_composite_ball_aed883fc6572063ba2e3173e4a78ed6bf}} 
+\index{Composite\+Ball@{Composite\+Ball}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}}
+{\footnotesize\ttfamily std\+::string Composite\+Ball\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the colour of this ball 
+
+\begin{DoxyReturn}{Returns}
+return the string type of the colour name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_a248c8a5fc9b8770840f275ea7057b012}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_a8120a00750a9bb77fd6e41f98de119b3}\label{class_composite_ball_a8120a00750a9bb77fd6e41f98de119b3}} 
+\index{Composite\+Ball@{Composite\+Ball}!get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}}
+\index{get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{get\+Contained\+Ball\+Number()}{getContainedBallNumber()}}
+{\footnotesize\ttfamily int Composite\+Ball\+::get\+Contained\+Ball\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the contained ball\textquotesingle{}s number 
+
+\begin{DoxyReturn}{Returns}
+an interger of number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_a13794c8d0e0863301a5f321a617542f6}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_afa621612641fecb3af81390bfbe7d941}\label{class_composite_ball_afa621612641fecb3af81390bfbe7d941}} 
+\index{Composite\+Ball@{Composite\+Ball}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily float Composite\+Ball\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the mass for this ball 
+
+\begin{DoxyReturn}{Returns}
+a float type of mass 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_ab755ce741a2f0b652f499d183376be04}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_a1585c03baf89ce19c58806dfa6eac131}\label{class_composite_ball_a1585c03baf89ce19c58806dfa6eac131}} 
+\index{Composite\+Ball@{Composite\+Ball}!get\+Strength@{get\+Strength}}
+\index{get\+Strength@{get\+Strength}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{get\+Strength()}{getStrength()}}
+{\footnotesize\ttfamily double Composite\+Ball\+::get\+Strength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the strength of the ball 
+
+\begin{DoxyReturn}{Returns}
+a double type of strength 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_ball_ab659c8dceb67abdd09423814d4fc879e}{Ball}}.
+
+\mbox{\Hypertarget{class_composite_ball_a2bf10829db0790d8a42529fafaf8c7b4}\label{class_composite_ball_a2bf10829db0790d8a42529fafaf8c7b4}} 
+\index{Composite\+Ball@{Composite\+Ball}!move\+Out@{move\+Out}}
+\index{move\+Out@{move\+Out}!Composite\+Ball@{Composite\+Ball}}
+\subsubsection{\texorpdfstring{move\+Out()}{moveOut()}}
+{\footnotesize\ttfamily void Composite\+Ball\+::move\+Out (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&}]{balls\+On\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+move the contained balls out into the given vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em given} & vector as destination for contained balls \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ball_a7d3b8c70ee8c61db73692a4d44bbf933}{Ball}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+compositeball.\+h\item 
+compositeball.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\hypertarget{classpool_game}{}\section{pool\+Game Class Reference}
+\label{classpool_game}\index{pool\+Game@{pool\+Game}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpool_game_a2f5550cf716aacfd50995fb73cb6602f}{add\+Table}} (\mbox{\hyperlink{classpool_table}{pool\+Table}} $\ast$\mbox{\hyperlink{classtable}{table}})
+\item 
+void \mbox{\hyperlink{classpool_game_a15f39114d5ee90d98521c01ab0f61f93}{add\+Ball}} (\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$\mbox{\hyperlink{classball}{ball}})
+\item 
+\mbox{\Hypertarget{classpool_game_a3493923000e44ff21712f1fbb0f159f6}\label{classpool_game_a3493923000e44ff21712f1fbb0f159f6}} 
+\mbox{\hyperlink{classpool_table}{pool\+Table}} $\ast$ {\bfseries getpooltable} ()
+\item 
+\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$ \mbox{\hyperlink{classpool_game_ae1c3bfe159dca6d35cf447ba634fbfea}{get\+One\+Poolball}} (int n)
+\item 
+\mbox{\Hypertarget{classpool_game_a7fbf9126542caa46842d3ece276cb014}\label{classpool_game_a7fbf9126542caa46842d3ece276cb014}} 
+std\+::vector$<$ \mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$ $>$ {\bfseries getpool\+Balls} ()
+\item 
+bool \mbox{\hyperlink{classpool_game_a171207b2803656237a241d30843bf883}{is\+Ball\+Collision}} (\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$A, \mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$B)
+\item 
+void \mbox{\hyperlink{classpool_game_a2b907f407d0de6644271b4e1a66a4f3c}{Collision\+Ball}} (\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$A, \mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpool_game_a15f39114d5ee90d98521c01ab0f61f93}\label{classpool_game_a15f39114d5ee90d98521c01ab0f61f93}} 
+\index{pool\+Game@{pool\+Game}!add\+Ball@{add\+Ball}}
+\index{add\+Ball@{add\+Ball}!pool\+Game@{pool\+Game}}
+\subsubsection{\texorpdfstring{add\+Ball()}{addBall()}}
+{\footnotesize\ttfamily void pool\+Game\+::add\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$}]{ball }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ball} & add a pool ba;; \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_game_a2f5550cf716aacfd50995fb73cb6602f}\label{classpool_game_a2f5550cf716aacfd50995fb73cb6602f}} 
+\index{pool\+Game@{pool\+Game}!add\+Table@{add\+Table}}
+\index{add\+Table@{add\+Table}!pool\+Game@{pool\+Game}}
+\subsubsection{\texorpdfstring{add\+Table()}{addTable()}}
+{\footnotesize\ttfamily void pool\+Game\+::add\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpool_table}{pool\+Table}} $\ast$}]{table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & add a pool table \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_game_a2b907f407d0de6644271b4e1a66a4f3c}\label{classpool_game_a2b907f407d0de6644271b4e1a66a4f3c}} 
+\index{pool\+Game@{pool\+Game}!Collision\+Ball@{Collision\+Ball}}
+\index{Collision\+Ball@{Collision\+Ball}!pool\+Game@{pool\+Game}}
+\subsubsection{\texorpdfstring{Collision\+Ball()}{CollisionBall()}}
+{\footnotesize\ttfamily void pool\+Game\+::\+Collision\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em B} & calculate the velocity and cooridnate change of two collided balls \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_game_ae1c3bfe159dca6d35cf447ba634fbfea}\label{classpool_game_ae1c3bfe159dca6d35cf447ba634fbfea}} 
+\index{pool\+Game@{pool\+Game}!get\+One\+Poolball@{get\+One\+Poolball}}
+\index{get\+One\+Poolball@{get\+One\+Poolball}!pool\+Game@{pool\+Game}}
+\subsubsection{\texorpdfstring{get\+One\+Poolball()}{getOnePoolball()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpool_ball}{pool\+Ball}}$\ast$ pool\+Game\+::get\+One\+Poolball (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & get a pool ball from vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpool_game_a171207b2803656237a241d30843bf883}\label{classpool_game_a171207b2803656237a241d30843bf883}} 
+\index{pool\+Game@{pool\+Game}!is\+Ball\+Collision@{is\+Ball\+Collision}}
+\index{is\+Ball\+Collision@{is\+Ball\+Collision}!pool\+Game@{pool\+Game}}
+\subsubsection{\texorpdfstring{is\+Ball\+Collision()}{isBallCollision()}}
+{\footnotesize\ttfamily bool pool\+Game\+::is\+Ball\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{classpool_ball}{pool\+Ball}} $\ast$}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em B} & check the ball-\/ball collision \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+product.\+h\end{DoxyCompactItemize}

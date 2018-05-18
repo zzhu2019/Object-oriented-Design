@@ -1,0 +1,221 @@
+\hypertarget{class_ball}{}\section{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+The \mbox{\hyperlink{class_ball}{Ball}} class is not responsible for physics calculation it exposes public radius position, velocity and mass fields so the responsible class can access them directly. You can pretend it\textquotesingle{}s a struct if you like.  
+
+
+
+
+{\ttfamily \#include $<$ball.\+h$>$}
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a52038e026ee4d3c960ec10e84465bfe2}{Ball}} (float radius=0, float mass=0, const Q\+Vector2D \&pos=N\+U\+L\+L\+\_\+2D, const Q\+Vector2D \&vel=N\+U\+L\+L\+\_\+2D, bool contained=false, bool is\+Remove=false)
+\begin{DoxyCompactList}\small\item\em Constructor for ball. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ball_a86aa99bb9b244c4ec9193f8ac09c6e8e}{change\+Pfor\+Contained}} (const Q\+Vector2D \&delta)=0
+\begin{DoxyCompactList}\small\item\em change the position for the contained ball inside this ball, it is virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_ball_ab755ce741a2f0b652f499d183376be04}{get\+Mass}} () const =0
+\begin{DoxyCompactList}\small\item\em get the mass of the ball, virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_ball_ab659c8dceb67abdd09423814d4fc879e}{get\+Strength}} () const =0
+\begin{DoxyCompactList}\small\item\em get the stregnth of the ball, virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_ball_a13794c8d0e0863301a5f321a617542f6}{get\+Contained\+Ball\+Number}} () const =0
+\begin{DoxyCompactList}\small\item\em get the number of contained balls inside this ball, is virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ball_a43cfbf4dca89a94048b4d45b2eaf62e9}{change\+Vfor\+Contained}} (const Q\+Vector2D \&Parent\+Velocity, float energy\+Per\+Ball, const Q\+Vector2D \&point\+Of\+Collision) const =0
+\begin{DoxyCompactList}\small\item\em change the velocity for contained balls inside this ball, is virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ball_a7d3b8c70ee8c61db73692a4d44bbf933}{move\+Out}} (std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&balls\+On\+Table)=0
+\begin{DoxyCompactList}\small\item\em move the contained balls out into the input vector parameter, is virtual and need to be overridden \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_ball_a248c8a5fc9b8770840f275ea7057b012}{get\+Colour}} () const =0
+\begin{DoxyCompactList}\small\item\em get the colour of the ball, is virtual and need to be overridden \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ball_af9ccb63ad19e4073c1de2aadbcaaf542}\label{class_ball_af9ccb63ad19e4073c1de2aadbcaaf542}} 
+bool {\bfseries is\+Contained}
+\item 
+\mbox{\Hypertarget{class_ball_a86bfb032007c736e06c2295a8070d620}\label{class_ball_a86bfb032007c736e06c2295a8070d620}} 
+float {\bfseries radius}
+\item 
+\mbox{\Hypertarget{class_ball_a7d4dece3bb0e321f1739917ce8ff6297}\label{class_ball_a7d4dece3bb0e321f1739917ce8ff6297}} 
+float {\bfseries mass}
+\item 
+\mbox{\Hypertarget{class_ball_af732a08aa15b235e44d30ca7a258f2be}\label{class_ball_af732a08aa15b235e44d30ca7a258f2be}} 
+Q\+Vector2D {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_ball_ad97aed858907a22482f53e5b623eaf6a}\label{class_ball_ad97aed858907a22482f53e5b623eaf6a}} 
+Q\+Vector2D {\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_ball_ad50c5d8887de16a94113760871279743}\label{class_ball_ad50c5d8887de16a94113760871279743}} 
+bool {\bfseries is\+Remove}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_ball}{Ball}} class is not responsible for physics calculation it exposes public radius position, velocity and mass fields so the responsible class can access them directly. You can pretend it\textquotesingle{}s a struct if you like. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a52038e026ee4d3c960ec10e84465bfe2}\label{class_ball_a52038e026ee4d3c960ec10e84465bfe2}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{float}]{radius = {\ttfamily 0},  }\item[{float}]{mass = {\ttfamily 0},  }\item[{const Q\+Vector2D \&}]{pos = {\ttfamily NULL\+\_\+2D},  }\item[{const Q\+Vector2D \&}]{vel = {\ttfamily NULL\+\_\+2D},  }\item[{bool}]{contained = {\ttfamily false},  }\item[{bool}]{is\+Remove = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for ball. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & used for collision detection \\
+\hline
+{\em mass} & used for physics \\
+\hline
+{\em pos} & initial poisiton for the ball \\
+\hline
+{\em vel} & inital velocity for the ball \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a86aa99bb9b244c4ec9193f8ac09c6e8e}\label{class_ball_a86aa99bb9b244c4ec9193f8ac09c6e8e}} 
+\index{Ball@{Ball}!change\+Pfor\+Contained@{change\+Pfor\+Contained}}
+\index{change\+Pfor\+Contained@{change\+Pfor\+Contained}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{change\+Pfor\+Contained()}{changePforContained()}}
+{\footnotesize\ttfamily virtual void Ball\+::change\+Pfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+change the position for the contained ball inside this ball, it is virtual and need to be overridden 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Q\+Vector type carries the delta for position change \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_a22ec99de5d096383f869a919f9f9abd7}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_a1e559c1b9d9b4905599c370c79990576}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_a43cfbf4dca89a94048b4d45b2eaf62e9}\label{class_ball_a43cfbf4dca89a94048b4d45b2eaf62e9}} 
+\index{Ball@{Ball}!change\+Vfor\+Contained@{change\+Vfor\+Contained}}
+\index{change\+Vfor\+Contained@{change\+Vfor\+Contained}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{change\+Vfor\+Contained()}{changeVforContained()}}
+{\footnotesize\ttfamily virtual void Ball\+::change\+Vfor\+Contained (\begin{DoxyParamCaption}\item[{const Q\+Vector2D \&}]{Parent\+Velocity,  }\item[{float}]{energy\+Per\+Ball,  }\item[{const Q\+Vector2D \&}]{point\+Of\+Collision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+change the velocity for contained balls inside this ball, is virtual and need to be overridden 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Q\+Vector2D of parent\textquotesingle{}s velocity \\
+\hline
+{\em a} & float of each ball\textquotesingle{}s energy \\
+\hline
+{\em a} & Q\+Vector2D of the collision\textquotesingle{}s point \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_a5e100bd3bc3b700d3ce1c5028d95ac31}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_a9aa11bc758f517c35de751ae8ce27966}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_a248c8a5fc9b8770840f275ea7057b012}\label{class_ball_a248c8a5fc9b8770840f275ea7057b012}} 
+\index{Ball@{Ball}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}}
+{\footnotesize\ttfamily virtual std\+::string Ball\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the colour of the ball, is virtual and need to be overridden 
+
+\begin{DoxyReturn}{Returns}
+a string of the name of this colour 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_aad4437558814bc8c6f276d5e09507eb4}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_aed883fc6572063ba2e3173e4a78ed6bf}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_a13794c8d0e0863301a5f321a617542f6}\label{class_ball_a13794c8d0e0863301a5f321a617542f6}} 
+\index{Ball@{Ball}!get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}}
+\index{get\+Contained\+Ball\+Number@{get\+Contained\+Ball\+Number}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{get\+Contained\+Ball\+Number()}{getContainedBallNumber()}}
+{\footnotesize\ttfamily virtual int Ball\+::get\+Contained\+Ball\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the number of contained balls inside this ball, is virtual and need to be overridden 
+
+\begin{DoxyReturn}{Returns}
+an interger of contained balls\textquotesingle{} number 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_ac9c7e389cf03bfb2f3e71d66bf6608cd}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_a8120a00750a9bb77fd6e41f98de119b3}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_ab755ce741a2f0b652f499d183376be04}\label{class_ball_ab755ce741a2f0b652f499d183376be04}} 
+\index{Ball@{Ball}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily virtual float Ball\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the mass of the ball, virtual and need to be overridden 
+
+\begin{DoxyReturn}{Returns}
+a float type of mass 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_a0cb0b931a2e3fa9f2ffba6fd354985ea}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_afa621612641fecb3af81390bfbe7d941}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_ab659c8dceb67abdd09423814d4fc879e}\label{class_ball_ab659c8dceb67abdd09423814d4fc879e}} 
+\index{Ball@{Ball}!get\+Strength@{get\+Strength}}
+\index{get\+Strength@{get\+Strength}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{get\+Strength()}{getStrength()}}
+{\footnotesize\ttfamily virtual double Ball\+::get\+Strength (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the stregnth of the ball, virtual and need to be overridden 
+
+\begin{DoxyReturn}{Returns}
+a double type of strength 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_a3a4c5bc776e3788112f02320432ba8cc}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_a1585c03baf89ce19c58806dfa6eac131}{Composite\+Ball}}.
+
+\mbox{\Hypertarget{class_ball_a7d3b8c70ee8c61db73692a4d44bbf933}\label{class_ball_a7d3b8c70ee8c61db73692a4d44bbf933}} 
+\index{Ball@{Ball}!move\+Out@{move\+Out}}
+\index{move\+Out@{move\+Out}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{move\+Out()}{moveOut()}}
+{\footnotesize\ttfamily virtual void Ball\+::move\+Out (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$$>$ \&}]{balls\+On\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+move the contained balls out into the input vector parameter, is virtual and need to be overridden 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & vector for balls on the table currently \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_simple_ball_a1af03353f6c3414e6ce7c12a9b338e72}{Simple\+Ball}}, and \mbox{\hyperlink{class_composite_ball_a2bf10829db0790d8a42529fafaf8c7b4}{Composite\+Ball}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ball.\+h\end{DoxyCompactItemize}

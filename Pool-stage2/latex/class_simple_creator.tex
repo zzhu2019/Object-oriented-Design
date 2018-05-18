@@ -1,0 +1,102 @@
+\hypertarget{class_simple_creator}{}\section{Simple\+Creator Class Reference}
+\label{class_simple_creator}\index{Simple\+Creator@{Simple\+Creator}}
+Inheritance diagram for Simple\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simple_creator}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ \mbox{\hyperlink{class_simple_creator_af6556afca4e573deaaf624e8be14dfae}{make\+Table}} (const Q\+Json\+Object \&spec, int f=1)
+\begin{DoxyCompactList}\small\item\em makes a \mbox{\hyperlink{class_simple_table}{Simple\+Table}} from J\+S\+ON config \end{DoxyCompactList}\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ \mbox{\hyperlink{class_simple_creator_a8e5fdfc8bcd5a661cdcfb49d33a51910}{make\+Ball}} (const Q\+Json\+Object \&spec, int f=1)
+\begin{DoxyCompactList}\small\item\em makes a \mbox{\hyperlink{class_simple_ball}{Simple\+Ball}} from the J\+S\+ON config \end{DoxyCompactList}\item 
+unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ \mbox{\hyperlink{class_simple_creator_a7fdf1b117c73c93da53694639ff6fc6c}{make\+Contained\+Ball}} (const Q\+Json\+Object \&spec, const Q\+Color \&colour, const Q\+Vector2D \&position)
+\begin{DoxyCompactList}\small\item\em make contained ball, can be in a recursive way \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simple_creator_a7645d79be8e3c339826bb8fe585dbabb}\label{class_simple_creator_a7645d79be8e3c339826bb8fe585dbabb}} 
+float {\bfseries table\+Height}
+\item 
+\mbox{\Hypertarget{class_simple_creator_aac38f49aba11104b8424df0867174e0c}\label{class_simple_creator_aac38f49aba11104b8424df0867174e0c}} 
+float {\bfseries table\+Width}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_creator_a8e5fdfc8bcd5a661cdcfb49d33a51910}\label{class_simple_creator_a8e5fdfc8bcd5a661cdcfb49d33a51910}} 
+\index{Simple\+Creator@{Simple\+Creator}!make\+Ball@{make\+Ball}}
+\index{make\+Ball@{make\+Ball}!Simple\+Creator@{Simple\+Creator}}
+\subsubsection{\texorpdfstring{make\+Ball()}{makeBall()}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ Simple\+Creator\+::make\+Ball (\begin{DoxyParamCaption}\item[{const Q\+Json\+Object \&}]{spec,  }\item[{int}]{f = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+makes a \mbox{\hyperlink{class_simple_ball}{Simple\+Ball}} from the J\+S\+ON config 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spec} & a J\+S\+ON configuration for the ball\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_simple_ball}{Simple\+Ball}} with the specified configuration 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creator_aa3f6415656f52625d4f3051bfa70d4eb}{Creator}}.
+
+\mbox{\Hypertarget{class_simple_creator_a7fdf1b117c73c93da53694639ff6fc6c}\label{class_simple_creator_a7fdf1b117c73c93da53694639ff6fc6c}} 
+\index{Simple\+Creator@{Simple\+Creator}!make\+Contained\+Ball@{make\+Contained\+Ball}}
+\index{make\+Contained\+Ball@{make\+Contained\+Ball}!Simple\+Creator@{Simple\+Creator}}
+\subsubsection{\texorpdfstring{make\+Contained\+Ball()}{makeContainedBall()}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$ \mbox{\hyperlink{class_ball}{Ball}} $>$ Simple\+Creator\+::make\+Contained\+Ball (\begin{DoxyParamCaption}\item[{const Q\+Json\+Object \&}]{spec,  }\item[{const Q\+Color \&}]{colour,  }\item[{const Q\+Vector2D \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+make contained ball, can be in a recursive way 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Q\+Json\+Object} & to get config information from json file \\
+\hline
+{\em the} & colour from its mother ball for default use \\
+\hline
+{\em the} & position from its mother ball\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a contained ball with the specified configuration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simple_creator_af6556afca4e573deaaf624e8be14dfae}\label{class_simple_creator_af6556afca4e573deaaf624e8be14dfae}} 
+\index{Simple\+Creator@{Simple\+Creator}!make\+Table@{make\+Table}}
+\index{make\+Table@{make\+Table}!Simple\+Creator@{Simple\+Creator}}
+\subsubsection{\texorpdfstring{make\+Table()}{makeTable()}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$ \mbox{\hyperlink{class_table}{Table}} $>$ Simple\+Creator\+::make\+Table (\begin{DoxyParamCaption}\item[{const Q\+Json\+Object \&}]{spec,  }\item[{int}]{f = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+makes a \mbox{\hyperlink{class_simple_table}{Simple\+Table}} from J\+S\+ON config 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spec} & a J\+S\+ON configuration for the table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_simple_table}{Simple\+Table}} with the specified configuration 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_creator_a70c571c0b776a5f29494f660957e0710}{Creator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simplecreator.\+h\item 
+simplecreator.\+cpp\end{DoxyCompactItemize}
